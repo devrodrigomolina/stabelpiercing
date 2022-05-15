@@ -1,11 +1,12 @@
 <template>
   <div class="container-sh">
-    <div class="infos-sh">
-      <h1>Vitor Stabel piercing</h1>
-    </div>
-    <div class="img-sh">
-      <img src="@/assets/vitorlado2.jpg" alt="">
-    </div>
+      <div class="infos-sh">
+        <h1>Vitor Stabel <span>Piercing</span>.</h1>
+        <p>Body Piercer Since 2015.</p>
+      </div>
+      <div class="img-sh">
+        <img src="@/assets/vitor.png" alt="">
+      </div>
   </div>
 </template>
 
@@ -15,24 +16,53 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
 .container-sh {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100vw;
-  height: 700px;
-
+  max-width: 1300px;
+  margin: 0 auto;
+  border-bottom: 4px solid #FBCE3F;
 }
 .infos-sh {
   display: flex;
-  align-items: center;
-  font-size: 2rem;
+  flex-direction: column;
+  justify-content: center;
 }
 .infos-sh h1 {
+  width: 500px;
+  font-size: 6rem;
+  font-family: 'Beau Rivage', cursive;
   color: white;
-  
 }
+.infos-sh p {
+  width: 300px;
+  color: white;
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  position: relative;
+  padding-left: 50px;
+}
+.infos-sh p::before {
+  content: '';
+  width: 55px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 9px;
+  left: -15px;
+}
+.infos-sh h1 span {
+  color: #FBCE3F;
+}
+
 .img-sh img {
-  height: 700px;
+  width: 540px;
+  height: 650px;
 }
+
 </style>

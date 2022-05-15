@@ -22,7 +22,6 @@ export default {
 }
 #app {
   width: 100vw;
-  height: 100vh;
-  background: radial-gradient(circle, #0A0B10 0%, #0A0B10 28%, rgba(0,0,0,1) 77%);
+  background: radial-gradient(circle, #0a0b10 0%, #000000 50%, rgb(0, 0, 0) 80%);
 }
 </style>
