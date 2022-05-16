@@ -30,9 +30,10 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 .conainer-sb {
   width: 100%;
-  margin-top: 80px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 80px;
   border-bottom: 2px solid #FBCE3F;
- 
   padding-bottom: 150px;
 }
 .conainer-sb h1 {

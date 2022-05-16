@@ -3,19 +3,22 @@
     <TheHeader/>
     <Home/>
     <Sobre />
+    <Trabalhos/>
   </div>
 </template>
 
 <script>
 import Home from "@/views/Home.vue"
 import Sobre from "@/views/Sobre.vue"
+import Trabalhos from "@/views/Trabalhos.vue"
 
 
 export default {
   name: 'App',
   components: {
     Home,
-    Sobre
+    Sobre,
+    Trabalhos
   },
 
 }
