@@ -1,10 +1,10 @@
 <template>
   <div id="home" class="container-sh">
-    <div class="infos-sh" data-anime="rigth">
+    <div class="infos-sh" > <!--data-anime="rigth"-->
       <h1>Vitor Stabel <span>Piercing</span>.</h1>
       <p>Body Piercer Since 2015.</p>
     </div>
-    <div class="img-sh" data-anime="left">
+    <div class="img-sh">
       <img src="@/assets/vitor.png" alt="">
     </div>
   </div>
