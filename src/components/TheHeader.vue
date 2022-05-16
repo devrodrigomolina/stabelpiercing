@@ -1,13 +1,13 @@
 <template>
   <div class="container-header">
     <div class="header">
-    <router-link to="/">Home</router-link>
-    <router-link to="/sobre">Sobre</router-link>
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre</a>
     <div class="logo">
       <img src="@/assets/logo-dourada2.png" alt="">
     </div>
-    <router-link to="/trabalhos">Trabalhos</router-link>
-    <router-link to="/contato">Contato</router-link>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#contato">Contato</a>
     </div>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
   height: 100px;
   position: relative;
   margin: 0 auto;
-
+  
 }
 .header {
   display: flex;

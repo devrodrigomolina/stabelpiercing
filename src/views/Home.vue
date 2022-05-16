@@ -6,6 +6,7 @@
 
 <script>
 import SubHeader from "@/components/SubHeader.vue"
+
 export default {
   name: 'Home',
   components: {
@@ -14,7 +15,5 @@ export default {
 }
 </script>
 <style scoped>
-.home {
-  width: 100vw;
-}
+
 </style>

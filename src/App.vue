@@ -1,16 +1,23 @@
 <template>
   <div id="app">
     <TheHeader/>
-    <router-view> </router-view>
+    <Home/>
+    <Sobre />
   </div>
 </template>
 
 <script>
+import Home from "@/views/Home.vue"
+import Sobre from "@/views/Sobre.vue"
+
+
 export default {
   name: 'App',
   components: {
-    
-  }
+    Home,
+    Sobre
+  },
+
 }
 </script>
 
@@ -20,8 +27,27 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 #app {
   width: 100vw;
   background: radial-gradient(circle, #0a0b10 0%, #000000 50%, rgb(0, 0, 0) 80%);
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: all 3s;
+}
+[data-anime="left"] {
+  transform: translate3d(50px, 0, 0);
+}
+[data-anime="rigth"] {
+  transform: translate3d(-150px, 0, 0);
+}
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0 ,0 ,0);
 }
 </style>
