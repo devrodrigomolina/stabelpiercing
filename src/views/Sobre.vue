@@ -33,7 +33,7 @@ export default {
   max-width: 1300px;
   margin: 0 auto;
   padding-top: 80px;
-  border-bottom: 2px solid #FBCE3F;
+  box-shadow: 0px 15px 10px -15px #fbcf3f33;
   padding-bottom: 150px;
 }
 .conainer-sb h1 {
@@ -57,6 +57,7 @@ export default {
   color: white;
   text-align: justify;
   font-family: 'Courier New', Courier, monospace;
+  border-radius: 50px;
   padding: 50px;
   margin: 0px 0px 0px 60px;
 }

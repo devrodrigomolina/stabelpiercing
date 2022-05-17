@@ -2,21 +2,39 @@
   <div id="trabalhos" class="container-tb">
     <h1>Acompanhe alguns dos meus trabalhos</h1>
     <div class="carrossel">
-      <img src="@/assets/a.jpeg" alt="">
-      <img src="@/assets/b.jpeg" alt="">
-      <img src="@/assets/c.jpeg" alt="">
-      <img src="@/assets/c.jpeg" alt="">
-      <img src="@/assets/c.jpeg" alt="">
-      <img src="@/assets/c.jpeg" alt="">
-      <img src="@/assets/c.jpeg" alt="">
-      <img src="@/assets/c.jpeg" alt="">
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
+      <div class="item">
+        <img src="@/assets/c.jpeg" alt="">
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+
+
 export default {
-  name: 'Trabalhos'
+  name: 'Trabalhos',
 }
 </script>
 
@@ -37,9 +55,18 @@ export default {
 }
 .carrossel {
   display: flex;
-  overflow-x: scroll;
+  width: 1300px;
+  height: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  overflow: scroll;
 }
 .carrossel img {
-  width: 300px;
+  height: 500px;
+  margin-left: 10px;
+}
+.item {
+  transition: all .3s;
 }
 </style>
