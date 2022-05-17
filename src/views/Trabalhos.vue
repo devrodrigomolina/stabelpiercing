@@ -2,28 +2,28 @@
   <div id="trabalhos" class="container-tb">
     <h1>Acompanhe alguns dos meus trabalhos</h1>
     <div class="carrossel">
-      <div class="item">
+      <div class="item" data-anime="rigth">
         <img src="@/assets/c.jpeg" alt="">
       </div>
-      <div class="item">
+      <div class="item" data-anime="rigth">
         <img src="@/assets/c.jpeg" alt="">
       </div>
-      <div class="item">
+      <div class="item" data-anime="rigth">
         <img src="@/assets/c.jpeg" alt="">
       </div>
-      <div class="item">
+      <div class="item" data-anime="rigth">
         <img src="@/assets/c.jpeg" alt="">
       </div>
-      <div class="item">
+      <div class="item" data-anime="left">
         <img src="@/assets/c.jpeg" alt="">
       </div>
-      <div class="item">
+      <div class="item" data-anime="left">
         <img src="@/assets/c.jpeg" alt="">
       </div>
-      <div class="item">
+      <div class="item" data-anime="left">
         <img src="@/assets/c.jpeg" alt="">
       </div>
-      <div class="item">
+      <div class="item" data-anime="left">
         <img src="@/assets/c.jpeg" alt="">
       </div>
     </div>
@@ -32,9 +32,11 @@
 
 <script>
 
+import animateScroll from "@/helpers/animations.js"
 
 export default {
   name: 'Trabalhos',
+  mixins: animateScroll,  
 }
 </script>
 
@@ -54,19 +56,18 @@ export default {
   font-size: 3rem;
 }
 .carrossel {
-  display: flex;
-  width: 1300px;
-  height: 500px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 20px;
-  overflow: scroll;
-}
-.carrossel img {
-  height: 500px;
-  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 13px;
+  border: 1px solid red;
 }
 .item {
-  transition: all .3s;
+  
 }
+.carrossel img {
+  width: 200px;
+
+}
+
 </style>
