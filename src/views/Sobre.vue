@@ -50,6 +50,7 @@ export default {
 }
 .foto img {
   width: 500px;
+  border-radius: 50%;
 }
 .infos-sb {
   box-shadow: 1px 1px 8px #fbcf3f33;
