@@ -1,48 +1,37 @@
 <template>
   <div id="trabalhos" class="container-tb">
-    <h1>Acompanhe alguns dos meus trabalhos</h1>
-    <div class="carrossel">
-      <div class="item" data-anime="rigth">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-      <div class="item" data-anime="rigth">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-      <div class="item" data-anime="rigth">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-      <div class="item" data-anime="rigth">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-      <div class="item" data-anime="left">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-      <div class="item" data-anime="left">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-      <div class="item" data-anime="left">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-      <div class="item" data-anime="left">
-        <img src="@/assets/c.jpeg" alt="">
-      </div>
-    </div>
+    <h1 data-anime="left">Acompanhe alguns dos meus trabalhos</h1>
+    <Slider data-anime="rigth"/>
   </div>
 </template>
 
 <script>
-
 import animateScroll from "@/helpers/animations.js"
+import Slider from "@/components/Slider.vue"
 
 export default {
   name: 'Trabalhos',
-  mixins: animateScroll,  
+  mixins: animateScroll,
+  components: {
+    Slider
+  }
 }
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
-
+.a {
+  height: 500px;
+}
+.hooper {
+  height: 600px;
+}
+.hooper img {
+  width: 400px;
+}
+.hooper-progress-inner {
+  background-color: #FBCE3F;
+}
 .container-tb {
   width: 100%;
   max-width: 1300px;
@@ -55,19 +44,8 @@ export default {
   margin: 50px 0;
   font-size: 3rem;
 }
-.carrossel {
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 13px;
-  border: 1px solid red;
-}
-.item {
-  
-}
-.carrossel img {
-  width: 200px;
 
-}
+
+
 
 </style>
