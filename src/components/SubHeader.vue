@@ -1,12 +1,21 @@
 <template>
   <div id="home" class="container-sh">
-    <div class="infos-sh" > <!--data-anime="rigth"-->
-      <h1>Vitor Stabel <span>Piercing</span>.</h1>
-      <p>Body Piercer Since 2015.</p>
-    </div>
-    <div class="img-sh">
-      <img src="@/assets/vitor.png" alt="">
-    </div>
+    <transition 
+      appear 
+    >
+      <div class="infos-sh" > <!--data-anime="rigth"-->
+        <h1>Vitor Stabel <span>Piercing</span>.</h1>
+        <p>Body Piercer Since 2015.</p>
+      </div>
+    </transition>
+    <transition
+      name="foto"
+      appear
+    >
+      <div class="img-sh">
+        <img src="@/assets/vitor.png" alt="">
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -68,4 +77,30 @@ export default {
   width: 540px;
   height: 650px;
 }
+
+/* ANIMAÇOES */
+
+.v-enter, .v-leave-to {
+  opacity: 0;
+  transform: translateX(-50px)
+}
+.v-enter-active,
+.v-leave-active,
+.foto-enter-active,
+.foto-leave-active {
+  transition: all 3s
+}
+.v-enter-to,
+.v-leave,
+.foto-enter-to,
+.foto-leave {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.foto-enter, .foto-leave-to {
+  opacity: 0;
+  transform: translateX(50px)
+}
+
 </style>

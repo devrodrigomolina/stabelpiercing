@@ -27,7 +27,6 @@ export default {
   height: 100px;
   position: relative;
   margin: 0 auto;
-  
 }
 .header {
   display: flex;

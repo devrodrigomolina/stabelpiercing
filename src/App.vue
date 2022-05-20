@@ -4,6 +4,7 @@
     <Home/>
     <Sobre />
     <Trabalhos/>
+    <Contato/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Home from "@/views/Home.vue"
 import Sobre from "@/views/Sobre.vue"
 import Trabalhos from "@/views/Trabalhos.vue"
+import Contato from "@/views/Contato.vue"
 
 
 export default {
@@ -18,7 +20,8 @@ export default {
   components: {
     Home,
     Sobre,
-    Trabalhos
+    Trabalhos,
+    Contato
   },
 
 }

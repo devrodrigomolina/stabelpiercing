@@ -1,9 +1,8 @@
 <template>
-  <div>
+  <div class="container">
     <VueSlickCarousel 
       :slidesToShow="4"
       :arrows="true"
-      :dots="true"
       :autoplay="true"
       :autoplaySpeed="2000"
       >
@@ -49,6 +48,10 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
   }
 </script> 
 <style scoped>
+.container {
+  padding-bottom: 150px;
+  box-shadow: 0px 15px 10px -15px #fbcf3f33;
+}
 .imagens img {
   width: 300px;
   height: 500px;

@@ -1,7 +1,7 @@
 <template>
   <div id="trabalhos" class="container-tb">
-    <h1 data-anime="left">Acompanhe alguns dos meus trabalhos</h1>
-    <Slider data-anime="rigth"/>
+    <h1 data-anime="rigth">Acompanhe alguns dos meus trabalhos</h1>
+    <Slider data-anime="left"/>
   </div>
 </template>
 
