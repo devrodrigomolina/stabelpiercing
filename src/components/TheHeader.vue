@@ -47,9 +47,7 @@ a {
 a:hover {
   color: #FBCE3F;
 }
-a.router-link-exact-active {
-  color: #FBCE3F;
-}
+
 a:before {
   content: "";
   position: absolute;
@@ -62,6 +60,7 @@ a:before {
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
+
 a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);

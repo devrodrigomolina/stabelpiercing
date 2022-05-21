@@ -5,6 +5,7 @@
     <Sobre />
     <Trabalhos/>
     <Contato/>
+    <Footer/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Home from "@/views/Home.vue"
 import Sobre from "@/views/Sobre.vue"
 import Trabalhos from "@/views/Trabalhos.vue"
 import Contato from "@/views/Contato.vue"
+import Footer from "@/components/TheFooter.vue"
 
 
 export default {
@@ -21,7 +23,8 @@ export default {
     Home,
     Sobre,
     Trabalhos,
-    Contato
+    Contato,
+    Footer
   },
 
 }
@@ -39,7 +42,7 @@ html {
 }
 #app {
   width: 100vw;
-  background: radial-gradient(circle, #0a0b10 0%, #000000 50%, rgb(0, 0, 0) 80%);
+  background: radial-gradient(circle, #0a0b10 20%, #000000 50%, rgb(0, 0, 0) 80%);
 }
 
 [data-anime] {
