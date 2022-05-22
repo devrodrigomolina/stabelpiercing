@@ -40,8 +40,7 @@ export default {
   margin: 0 auto;
   box-shadow: 0px 15px 10px -15px #fbcf3f33;
   /*border-bottom: 2px solid #FBCE3F;*/
-  background: radial-gradient(circle, #0a0b10 
-  0%, #000000 50%, rgb(0, 0, 0) 80%);
+
 }
 .infos-sh {
   display: flex;

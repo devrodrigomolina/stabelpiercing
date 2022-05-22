@@ -39,15 +39,22 @@ export default {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background: radial-gradient(circle, #0a0b10 20%, #000000 50%, rgb(0, 0, 0) 80%);
 }
 #app {
   width: 100vw;
-  background: radial-gradient(circle, #0a0b10 20%, #000000 50%, rgb(0, 0, 0) 80%);
+  background-image: url("./assets/background4.png");
+  background-repeat: repeat;
+  background-size: 260px;
+  transform: skewY(100px);
 }
 
 [data-anime] {
   opacity: 0;
   transition: all 3s;
+}
+[data-anime="top"] {
+  transform: translateY(-50px);
 }
 [data-anime="left"] {
   transform: translate3d(50px, 0, 0);

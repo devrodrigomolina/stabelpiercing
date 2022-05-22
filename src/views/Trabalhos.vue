@@ -1,6 +1,6 @@
 <template>
   <div id="trabalhos" class="container-tb">
-    <h1 data-anime="rigth">Acompanhe alguns dos meus trabalhos</h1>
+    <h1 class="title" data-anime="rigth">Acompanhe alguns dos meus trabalhos</h1>
     <Slider data-anime="left"/>
   </div>
 </template>
@@ -20,9 +20,7 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
-.a {
-  height: 500px;
-}
+
 .hooper {
   height: 600px;
 }
@@ -32,16 +30,27 @@ export default {
 .hooper-progress-inner {
   background-color: #FBCE3F;
 }
+
+.title:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  bottom: 0;
+  left: 46%;
+  background-color: #FBCE3F;
+}
 .container-tb {
   width: 100%;
   max-width: 1300px;
+  padding-top: 180px;
   margin: 0 auto;
 }
 .container-tb h1 {
   color: white;
   font-family: 'Beau Rivage', cursive;
   text-align: center;
-  margin: 50px 0;
+  margin: 0 0 100px 0;
   font-size: 3rem;
 }
 

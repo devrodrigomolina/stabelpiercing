@@ -32,8 +32,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  width: 1200px;
   height: 100px;
   font-family: 'Poppins', sans-serif;
   color: white; 

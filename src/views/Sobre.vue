@@ -2,7 +2,7 @@
   <div id="sobre" class="conainer-sb">
     <h1 class="title" data-anime="rigth">Um pouco mais sobre mim</h1>
     <div class="container-infos">
-      <div class="foto" data-anime="rigth">
+      <div class="foto" data-anime="top">
         <img src="@/assets/vitorpiercing.png" alt="">
       </div>
       <div  class="infos-sb" data-anime="left">
@@ -35,21 +35,22 @@ export default {
   padding-top: 80px;
   box-shadow: 0px 15px 10px -15px #fbcf3f33;
   padding-bottom: 150px;
-  
 }
 .conainer-sb .title {
   color: white;
   font-family: 'Beau Rivage', cursive;
+  text-align: center;
   margin: 50px 0;
   font-size: 3rem;
+  position: relative;
 }
 .title:before {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 100px;
   height: 2px;
   bottom: 0;
-  left: 0px;
+  left: 46%;
   background-color: #FBCE3F;
 }
 

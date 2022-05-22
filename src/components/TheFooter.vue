@@ -1,10 +1,11 @@
 <template>
   <div class="footer">
-    <div class="credits">
-      <p>Desenvolvido por Rodrigo Molina</p>
-    </div>
-    <div class="sociais">
-     <font-awesome-icon icon="fa-brands fa-instagram" />
+    <div>
+
+      <div class="credits">
+        <p>Desenvolvido por Rodrigo Molina</p>
+      </div>
+
     </div>
   </div>
 </template>
@@ -19,14 +20,14 @@ export default {
 .footer {
   width: 100vw;
   height: 300px;
-  background: rgba(88, 88, 88, 0.336);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .credits {
   color: white;
   font-size: 1.2rem;
 }
-.sociais {
-  width: 300px;
-  height: 300px;
-}
+
 </style>
