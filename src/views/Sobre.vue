@@ -88,19 +88,38 @@ export default {
 }
 
 @media screen and (max-width: 769px) {
+  .conainer-sb {
+    max-width: 738px;
+    height: 100vh;
+    padding-bottom: 0px;
+  }
+  .container-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
   .foto img {
-    width: 200px;
+    width: 180px;
+    margin-left: 70px;
+    border-radius: 0%;
   }
   .infos-sb {
     width: 100%;
-    max-width: 350px;
+    max-width: 550px;
+    height: 350px;
+    line-height: 1.8;
   }
   .infos-sb p {
     width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
+    max-width: 450px;
     font-size: 13px;
     padding-top: 10px;
+  }
+  .infos-sb h1 {
+    text-align: center;
+    font-size: 3rem;
   }
 }
 </style>

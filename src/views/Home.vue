@@ -110,13 +110,23 @@ export default {
   .infos-sh {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 768px;
+    height: 100vh;
   }
   .infos-sh h1 {
+    width: 350px;
+    font-size: 7rem;
+    padding-left: 130px;
+  }
+  .infos-sh p {
     width: 300px;
+    padding-left: 160px;
   }
-  .img-sh img {
-    width: 240px;
-    height: 350px;
+  .infos-sh p::before {
+    width: 35px;
+    left: 120px;
   }
+
 }
 </style>
