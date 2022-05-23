@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <TheHeader/>
+    <!--<router-view> </router-view>-->
     <Home/>
     <Sobre />
     <Trabalhos/>
@@ -15,7 +16,6 @@ import Sobre from "@/views/Sobre.vue"
 import Trabalhos from "@/views/Trabalhos.vue"
 import Contato from "@/views/Contato.vue"
 import Footer from "@/components/TheFooter.vue"
-
 
 export default {
   name: 'App',
@@ -46,7 +46,6 @@ html {
   background-image: url("./assets/background4.png");
   background-repeat: repeat;
   background-size: 260px;
-  transform: skewY(100px);
 }
 
 [data-anime] {
@@ -65,5 +64,12 @@ html {
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0 ,0 ,0);
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
 }
 </style>

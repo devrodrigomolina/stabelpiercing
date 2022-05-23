@@ -1,13 +1,20 @@
 <template>
   <div class="container-header">
     <div class="header">
-    <a href="#home">Home</a>
-    <a href="#sobre">Sobre</a>
-    <div class="logo">
-      <img src="@/assets/logo-dourada2.png" alt="">
-    </div>
-    <a href="#trabalhos">Trabalhos</a>
-    <a href="#contato">Contato</a>
+     <!-- <router-link to="/" class="btn">Home</router-link>
+      <router-link to="/sobre" class="btn">Sobre</router-link>
+      <div class="logo">
+        <img src="@/assets/logo-dourada2.png" alt="">
+      </div>
+      <router-link to="/trabalhos" class="btn">Trabalhos</router-link>
+      <router-link to="/contato" class="btn">Contato</router-link>-->
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <div class="logo">
+        <img src="@/assets/logo-dourada2.png" alt="">
+      </div>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#contato">Contato</a>
     </div>
   </div>
 </template>
@@ -74,5 +81,21 @@ a:hover:before {
 }
 .logo img:hover {
   transform: scale(1.1);
+}
+/* RESPONSIVO */
+
+@media screen and (max-width: 768px) {
+  .container-header {
+    max-width: 500px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    z-index: 1000;
+    width: 500px;
+    font-size: 10px;
+  }
 }
 </style>

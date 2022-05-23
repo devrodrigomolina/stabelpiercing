@@ -56,6 +56,7 @@ export default {
 
 .container-infos {
   display: flex;
+  width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 60px 0;
@@ -66,7 +67,8 @@ export default {
 }
 .infos-sb {
   box-shadow: 1px 1px 8px #fbcf3f33;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   color: white;
   text-align: justify;
   font-family: 'Courier New', Courier, monospace;
@@ -83,5 +85,22 @@ export default {
   margin: 0 auto;
   font-size: 20px;
   padding-top: 40px;
+}
+
+@media screen and (max-width: 769px) {
+  .foto img {
+    width: 200px;
+  }
+  .infos-sb {
+    width: 100%;
+    max-width: 350px;
+  }
+  .infos-sb p {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 13px;
+    padding-top: 10px;
+  }
 }
 </style>

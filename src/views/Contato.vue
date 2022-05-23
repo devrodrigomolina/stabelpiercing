@@ -41,7 +41,7 @@ export default {
   color: white;
   font-family: 'Beau Rivage', cursive;
   text-align: center;
-  margin: 180px 0 40px 0;
+  margin: 123px 0 40px 0;
   font-size: 3rem;
 }
 .title:before {
@@ -55,14 +55,14 @@ export default {
 }
 .sociais {
   width: 100%;
-  height: 230px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
+  margin-bottom: 60px;
 }
-
 .sociais img{
   width: 70px;
   margin-left: 20px;
@@ -79,7 +79,13 @@ export default {
   width: 100%;
   max-width: 1300px;
   border-radius: 10px;
-  height: 450px;
-  margin-top: 50px;
+  height: 420px;
+  margin-top: 8px;
 }
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  
+}
+
 </style>
