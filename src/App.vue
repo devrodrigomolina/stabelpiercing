@@ -35,6 +35,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 html {
   scroll-behavior: smooth;
@@ -70,6 +71,12 @@ html {
 @media screen and (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+  #app {
+    background-image: url("./assets/background3.png");
+    background-repeat: repeat;
+    background-size: 120px;
+    overflow-x: hidden;
   }
 }
 </style>

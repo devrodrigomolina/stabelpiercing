@@ -84,7 +84,7 @@ export default {
 }
 
 /* RESPONSIVO */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
   
 }
 

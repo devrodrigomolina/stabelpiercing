@@ -106,26 +106,43 @@ export default {
 
 /* RESPONSIVO */
 
-@media screen and (max-width: 768px) {
-  .infos-sh {
+@media only screen and (max-width: 768px) {
+ .container-sh {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 768px;
-    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 100px;
+  }
+ 
+ .infos-sh {
+    width: 200px;
+    position: relative;
+
   }
   .infos-sh h1 {
-    width: 350px;
-    font-size: 7rem;
-    padding-left: 130px;
+    width: 150px;
+
+    font-size: 5rem;
+    margin-left: 25px;
   }
   .infos-sh p {
-    width: 300px;
-    padding-left: 160px;
+    width: 100%;
+    font-size: 10px;
   }
   .infos-sh p::before {
-    width: 35px;
-    left: 120px;
+    width: 25px;
+    left: 22px;
+  }
+  .img-sh {
+    width: 250px;
+    height: 300px;
+
+  }
+  .img-sh img {
+    width: 100%;
+    height: 100%;
   }
 
 }

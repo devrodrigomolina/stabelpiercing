@@ -87,10 +87,10 @@ export default {
   padding-top: 40px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .conainer-sb {
-    max-width: 738px;
-    height: 100vh;
+    width: 100%;
+    padding-top: 40px;
     padding-bottom: 0px;
   }
   .container-infos {
@@ -102,18 +102,17 @@ export default {
   }
   .foto img {
     width: 180px;
-    margin-left: 70px;
+    margin-left: 0px;
     border-radius: 0%;
   }
   .infos-sb {
     width: 100%;
-    max-width: 550px;
-    height: 350px;
-    line-height: 1.8;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0px;
   }
   .infos-sb p {
     width: 100%;
-    max-width: 450px;
     font-size: 13px;
     padding-top: 10px;
   }
@@ -122,4 +121,6 @@ export default {
     font-size: 3rem;
   }
 }
+
+
 </style>

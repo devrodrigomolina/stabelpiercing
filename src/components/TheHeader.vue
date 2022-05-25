@@ -1,13 +1,13 @@
 <template>
   <div class="container-header">
+
+    <div @click="menu" class="btn-mobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <div class="header">
-     <!-- <router-link to="/" class="btn">Home</router-link>
-      <router-link to="/sobre" class="btn">Sobre</router-link>
-      <div class="logo">
-        <img src="@/assets/logo-dourada2.png" alt="">
-      </div>
-      <router-link to="/trabalhos" class="btn">Trabalhos</router-link>
-      <router-link to="/contato" class="btn">Contato</router-link>-->
       <a href="#home">Home</a>
       <a href="#sobre">Sobre</a>
       <div class="logo">
@@ -21,7 +21,13 @@
 
 <script>
 export default {
-  name: 'TheHeader'
+  name: 'TheHeader',
+  methods: {
+    menu() {
+      let el = document.querySelector('.header');
+      el.classList.toggle('active')
+    }
+  }
 }
 </script>
 
@@ -34,6 +40,9 @@ export default {
   height: 100px;
   position: relative;
   margin: 0 auto;
+}
+.btn-mobile {
+  display: none;
 }
 .header {
   display: flex;
@@ -82,20 +91,41 @@ a:hover:before {
 .logo img:hover {
   transform: scale(1.1);
 }
+
 /* RESPONSIVO */
 
-@media screen and (max-width: 768px) {
-  .container-header {
-    max-width: 500px;
-  }
+@media only screen and (max-width: 768px) {
   .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    z-index: 1000;
-    width: 500px;
-    font-size: 10px;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    top: -100%;
+    left: 0;
+    transition: all .3s;
+    background: rgba(255, 0, 0, 0.452);
+  }
+  .header.active {
+    top: 0;
+  }
+  .btn-mobile {
+    width: 50px;
+    height: 40px;
+    background: red;
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+  }
+  .btn-mobile span {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    top: 30px;
+    left: 10px;
+    border-radius: 30px;
+    transition-duration: 0.5s;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <VueSlickCarousel 
+    <VueSlickCarousel class="slider"
       :slidesToShow="4"
       :arrows="true"
       :autoplay="true"
@@ -58,4 +58,18 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 0px;
+  }
+  .imagens img {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+  }
+  .slider {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
 </style>

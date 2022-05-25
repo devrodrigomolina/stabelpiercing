@@ -21,15 +21,6 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 
-.hooper {
-  height: 600px;
-}
-.hooper img {
-  width: 400px;
-}
-.hooper-progress-inner {
-  background-color: #FBCE3F;
-}
 
 .title:before {
   content: "";
@@ -54,7 +45,11 @@ export default {
   font-size: 3rem;
 }
 
-
+@media screen and (max-width: 768px) {
+  .container-tb {
+     padding-top: 80px;
+  }
+}
 
 
 </style>
