@@ -1,10 +1,18 @@
 <template>
   <div class="container-header">
-
-    <div @click="menu" class="btn-mobile">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="container-hamburguer">
+      <input 
+        type="checkbox"
+        id="btn-mobile"
+        class="btn-mobile"
+        v-model="checked"
+        @click="menu"
+      >
+      <label for="btn-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </div>
 
     <div class="header">
@@ -22,12 +30,27 @@
 <script>
 export default {
   name: 'TheHeader',
+  data() {
+    return {
+      checked: false
+    }
+  },
   methods: {
     menu() {
       let el = document.querySelector('.header');
-      el.classList.toggle('active')
+      let links = document.querySelectorAll('.header a');
+
+      !this.checked ? el.classList.add('active') : el.classList.remove('active');
+      links.forEach((element) => {
+        element.addEventListener('click', () => {
+          el.classList.remove('active');
+          this.checked = false
+
+        })
+      });    
     }
-  }
+  },
+
 }
 </script>
 
@@ -44,6 +67,7 @@ export default {
 .btn-mobile {
   display: none;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -107,25 +131,56 @@ a:hover:before {
   .header.active {
     top: 0;
   }
-  .btn-mobile {
-    width: 50px;
-    height: 40px;
-    background: red;
-    display: block;
-    position: absolute;
+  .container-hamburguer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
     z-index: 9999;
-    top: 0;
-    left: 0;
   }
-  .btn-mobile span {
-    background-color: rgb(255, 255, 255);
+  .btn-mobile {
     position: absolute;
-    height: 3px;
-    width: 30px;
-    top: 30px;
+    opacity: 0;
+  }
+  label {
+    cursor: pointer;
+    position: relative;
     left: 10px;
+    top: 15px;
+    display: block;
+    height: 22px;
+    width: 30px;
+  }
+  label span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    z-index: 99999;
     border-radius: 30px;
-    transition-duration: 0.5s;
+    background: white;
+    transition: all .3s;
+  }
+  label span:nth-child(1) {
+    top: 0;
+  }
+  label span:nth-child(2) {
+    top: 10px;
+  }
+  label span:nth-child(3) {
+    top: 20px;
+  }
+  .btn-mobile:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  .btn-mobile:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  .btn-mobile:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 10px;
   }
 }
 </style>
