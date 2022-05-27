@@ -119,21 +119,22 @@ export default {
  .infos-sh {
     width: 200px;
     position: relative;
-
   }
   .infos-sh h1 {
-    width: 150px;
-
+    width: 100%;
     font-size: 5rem;
-    margin-left: 25px;
+    margin-left: 45px;
+    position: relative;
   }
   .infos-sh p {
     width: 100%;
     font-size: 10px;
+    left: 8px;
   }
   .infos-sh p::before {
-    width: 25px;
-    left: 22px;
+    width: 15px;
+    left: 33px;
+    top: 5px;
   }
   .img-sh {
     width: 250px;

@@ -106,7 +106,7 @@ export default {
     border-radius: 0%;
   }
   .infos-sb {
-    width: 100%;
+    width: 80%;
     line-height: 1.6;
     padding: 20px;
     margin: 0px;

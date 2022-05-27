@@ -1,11 +1,6 @@
 <template>
   <div class="container">
-    <VueSlickCarousel class="slider"
-      :slidesToShow="4"
-      :arrows="true"
-      :autoplay="true"
-      :autoplaySpeed="2000"
-      >
+    <VueSlickCarousel class="slider" v-bind="settings">
       <div class="imagens" v-for="img in images" :key="img">
         <img :src="img" alt="">
       </div>
@@ -24,6 +19,13 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
     components: { VueSlickCarousel },
     data() {
       return {
+        settings: {
+          slidesToShow: 4,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          simple: true
+        },
         images: [
           require('@/assets/trabalhos/1.jpg'),
           require('@/assets/trabalhos/2.jpg'),
@@ -44,6 +46,18 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
           require('@/assets/trabalhos/17.jpeg'),
         ]
       }
+    },
+    computed: {
+      getScreenSize() {
+        let width = window.screen.width;
+        console.log(this.settings.slidesToShow)
+        if(width <= 768) {
+          this.settings.slidesToShow = 1
+        }
+      }
+    },
+    created() {
+      this.getScreenSize
     }
   }
 </script> 

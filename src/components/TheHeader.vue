@@ -123,7 +123,7 @@ a:hover:before {
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    top: -100%;
+    top: -900px;
     left: 0;
     transition: all .3s;
     background: rgba(255, 0, 0, 0.452);
@@ -146,7 +146,7 @@ a:hover:before {
   label {
     cursor: pointer;
     position: relative;
-    left: 10px;
+    left: -15px;
     top: 15px;
     display: block;
     height: 22px;
