@@ -6,7 +6,7 @@
         id="btn-mobile"
         class="btn-mobile"
         v-model="checked"
-        @click="menu"
+        @click="menuMobile"
       >
       <label for="btn-mobile">
         <span></span>
@@ -16,13 +16,13 @@
     </div>
 
     <div class="header">
-      <a href="#home">Home</a>
-      <a href="#sobre">Sobre</a>
+      <a class="btn" href="#home">Home</a>
+      <a class="btn" href="#sobre">Sobre</a>
       <div class="logo">
         <img src="@/assets/logo-dourada2.png" alt="">
       </div>
-      <a href="#trabalhos">Trabalhos</a>
-      <a href="#contato">Contato</a>
+      <a class="btn" href="#trabalhos">Trabalhos</a>
+      <a class="btn" href="#contato">Contato</a>
     </div>
   </div>
 </template>
@@ -36,7 +36,15 @@ export default {
     }
   },
   methods: {
-    menu() {
+    /*menuItemActived() {
+      let btns = document.querySelectorAll('.btn')
+      btns.forEach(item => {
+        item.classList.remove('btn-active')
+        item.classList.add('btn-active')
+      })
+
+    },*/
+    menuMobile() {
       let el = document.querySelector('.header');
       let links = document.querySelectorAll('.header a');
 
@@ -45,12 +53,10 @@ export default {
         element.addEventListener('click', () => {
           el.classList.remove('active');
           this.checked = false
-
         })
       });    
     }
   },
-
 }
 </script>
 
@@ -67,7 +73,6 @@ export default {
 .btn-mobile {
   display: none;
 }
-
 .header {
   display: flex;
   align-items: center;
@@ -80,16 +85,18 @@ export default {
   color: white; 
   font-size: 18px;
 }
-a {
+.btn {
   color: white;
   position: relative;
   text-decoration: none;
 }
-a:hover {
+.btn-active {
+  background: red;
+}
+.btn:hover{
   color: #FBCE3F;
 }
-
-a:before {
+.btn:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -101,8 +108,7 @@ a:before {
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-
-a:hover:before {
+.btn:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -123,7 +129,7 @@ a:hover:before {
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    top: -900px;
+    top: -2000px;
     left: 0;
     transition: all .3s;
     background: rgba(255, 0, 0, 0.452);

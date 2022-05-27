@@ -2,6 +2,7 @@
   <div class="footer">
     <div>
       <div class="credits">
+        <p class="copyright">&#169; 2022 Vitor Stabel</p>
         <p>Desenvolvido por Rodrigo Molina</p>
       </div>
     </div>
@@ -18,7 +19,6 @@ export default {
 .footer {
   width: 100vw;
   height: 200px;
-  background: rgba(17, 17, 17, 0.192);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,9 @@ export default {
 }
 .credits {
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
+
 
 </style>

@@ -85,7 +85,12 @@ export default {
 
 /* RESPONSIVO */
 @media screen and (max-width: 390px) {
-  
+  .text p {
+    font-size: 1.3rem;
+  }
+  .map {
+    border-radius: 0px;
+  }
 }
 
 </style>

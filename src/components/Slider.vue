@@ -50,10 +50,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
     computed: {
       getScreenSize() {
         let width = window.screen.width;
-        console.log(this.settings.slidesToShow)
-        if(width <= 768) {
-          this.settings.slidesToShow = 1
-        }
+        width <= 768 ? this.settings.slidesToShow = 1 : ''
       }
     },
     created() {
