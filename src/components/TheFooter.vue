@@ -22,13 +22,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .credits {
   color: white;
   font-size: 0.8rem;
   text-align: center;
 }
-
-
 </style>

@@ -25,7 +25,6 @@ import animateScroll from "@/helpers/animations.js"
 export default {
   name: 'Home',
   mixins: animateScroll,
-
 }
 </script>
 

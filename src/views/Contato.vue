@@ -84,8 +84,10 @@ export default {
 }
 
 /* RESPONSIVO */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 768px) {
   .text p {
+    width: 200px;
+    text-align: center;
     font-size: 1.3rem;
   }
   .map {

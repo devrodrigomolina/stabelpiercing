@@ -73,9 +73,9 @@ export default {
     padding-bottom: 0px;
   }
   .imagens img {
-    width: 300px;
+    width: 100%;
     height: 500px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
   .slider {
     width: 300px;

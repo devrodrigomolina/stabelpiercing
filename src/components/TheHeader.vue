@@ -47,11 +47,14 @@ export default {
   methods: {
     /*menuItemActived() {
       let btns = document.querySelectorAll('.btn')
-      btns.forEach(item => {
-        item.classList.remove('btn-active')
-        item.classList.add('btn-active')
-      })
+      let header = document.querySelector('.header')
 
+      btns.forEach(item => {
+        item.addEventListener('click', e => {
+          header.querySelector('.active-list').classList.remove('active-list')
+          item.classList.add('active-list')
+        })
+      })
     },*/
     menuMobile() {
       let el = document.querySelector('.header');
@@ -99,10 +102,8 @@ export default {
   position: relative;
   text-decoration: none;
 }
-.btn-active {
-  background: red;
-}
-.btn:hover{
+
+.btn:hover, .active-list{
   color: #FBCE3F;
 }
 .btn:before {
@@ -133,6 +134,7 @@ export default {
 .logo-mb img {
   display: none;
 }
+
 /* RESPONSIVO */
 
 @media only screen and (max-width: 768px) {
@@ -140,15 +142,16 @@ export default {
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    top: -2000px;
+    justify-content: space-evenly;
+    top: -1000px;
     left: 0;
-    transition: all .3s;
+    transition: all .9s;
     background: rgba(0, 0, 0, 0.993);
+    border-bottom: 15px solid #FBCE3F;
   }
   .header.active {
     top: 0;
   }
-
   .logo-mb img {
     display: block;
     margin: 20px;
@@ -156,7 +159,9 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-    transition: all .3s;
+  }
+  .header .logo {
+    display: none;
   }
   .container-hamburguer {
     display: flex;
