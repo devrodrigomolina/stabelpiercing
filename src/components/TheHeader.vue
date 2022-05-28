@@ -1,6 +1,9 @@
 <template>
   <div class="container-header">
     <div class="container-hamburguer">
+      <div v-if="!showLogomobile <= 768" class="logo-mb">
+        <img src="@/assets/logo-dourada2.png" alt="">
+      </div>
       <input 
         type="checkbox"
         id="btn-mobile"
@@ -15,7 +18,7 @@
       </label>
     </div>
 
-    <div class="header">
+    <div class="header">      
       <a class="btn" href="#home">Home</a>
       <a class="btn" href="#sobre">Sobre</a>
       <div class="logo">
@@ -33,6 +36,12 @@ export default {
   data() {
     return {
       checked: false
+    }
+  },
+  computed: {
+    showLogomobile() {
+      let width = window.screen.width;
+      return width
     }
   },
   methods: {
@@ -121,7 +130,9 @@ export default {
 .logo img:hover {
   transform: scale(1.1);
 }
-
+.logo-mb img {
+  display: none;
+}
 /* RESPONSIVO */
 
 @media only screen and (max-width: 768px) {
@@ -132,10 +143,20 @@ export default {
     top: -2000px;
     left: 0;
     transition: all .3s;
-    background: rgba(255, 0, 0, 0.452);
+    background: rgba(0, 0, 0, 0.993);
   }
   .header.active {
     top: 0;
+  }
+
+  .logo-mb img {
+    display: block;
+    margin: 20px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s;
   }
   .container-hamburguer {
     display: flex;
@@ -152,8 +173,8 @@ export default {
   label {
     cursor: pointer;
     position: relative;
-    left: -15px;
-    top: 15px;
+    left: -35px;
+    top: 30px;
     display: block;
     height: 22px;
     width: 30px;
