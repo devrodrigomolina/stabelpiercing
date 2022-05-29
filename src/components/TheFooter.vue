@@ -2,7 +2,7 @@
   <div class="footer">
     <div>
       <div class="credits">
-        <p class="copyright">&#169; 2022 Vitor Stabel</p>
+        <p class="copyright">&#169; 2022 Vitor Stabel.</p>
         <p>Desenvolvido por Rodrigo Molina</p>
       </div>
     </div>
