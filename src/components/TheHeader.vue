@@ -2,7 +2,7 @@
   <div class="container-header">
     <div class="container-hamburguer">
       <div v-if="!showLogomobile <= 768" class="logo-mb">
-        <img src="@/assets/logo-dourada2.png" alt="">
+        <a href="#home"><img src="@/assets/logo-dourada2.png" alt=""></a>
       </div>
       <input 
         type="checkbox"

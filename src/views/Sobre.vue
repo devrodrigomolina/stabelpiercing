@@ -6,9 +6,20 @@
         <img src="@/assets/vitorpiercing.png" alt="">
       </div>
       <div  class="infos-sb" data-anime="left">
-        <h1>Olá, Me chamo Vitor Stabel</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae autem cupiditate dolorum odio deserunt harum expedita veniam sit. Voluptas nam esse quaerat explicabo repudiandae quam sit vel aliquid dolor laudantium.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae autem cupiditate dolorum odio deserunt harum expedita veniam sit. Voluptas nam esse quaerat explicabo repudiandae quam sit vel aliquid dolor laudantium.</p>
+        <h1>Olá, Me chamo Vitor Henrique Stabel</h1>
+        <p>Mais conhecido como <span>Vitor Stabel</span> ou <span>Stabel piercer</span>. 
+        Sou profissional atuante na área como perfurador corporais/body piercer a <span>7(sete) anos</span> na cidade de Londrina-PR.</p>
+        <p>No decorrer do caminho, trabalhei, evolui, aprendi e enfrentei dificuldades, mas essas dificuldades foram o que me fizeram amar e admirar ainda mais meu campo de atuação.</p>
+        <p>Assim como disse, sempre busco evoluir meus conhecimentos e aprender mais todos os dias para que possa entregar o melhor resultado para meus clientes. 
+        Atualmente trabalho com jóias em aço cirúrgico e em titânio e jóias trabalhadas sob encomenda.</p>
+        <p>E aí, bora agendar sua perfuração ou troca de jóia!? Aguardo seu contato!</p>
+   
+        <!--Atendo no endereço da Rua Sérgipe 829, Edifício Baldan, sala 12 de segunda a sábado com hora marcada. 
+
+        E aí, bora agendar sua perfuração ou troca de jóia!? Aguardo seu contato! -->
+        <div class="btn">
+          <a class="contato" href="https://wa.me/5543991278151">Contato</a>
+        </div>
       </div>
     </div>
   </div>
@@ -28,6 +39,8 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .conainer-sb {
   width: 100%;
   max-width: 1300px;
@@ -78,14 +91,43 @@ export default {
 }
 .infos-sb h1 {
   color: #FBCE3F;
-  font-size: 30px;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .infos-sb p {
   width: 500px;
   margin: 0 auto;
-  font-size: 20px;
-  padding-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding-top: 13px;
+  text-align: justify;
 }
+.infos-sb p span {
+  color:#FBCE3F;
+}
+.btn {
+  padding-top: 55px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.contato {
+  padding: 13px 60px;
+  text-align: center;
+  color: white;
+  background: #b89217;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all .3s;
+}
+.contato:hover {
+  background: #ebc64e;
+}
+
+/* ############  RESPONSIVO  #############*/
 
 @media screen and (max-width: 768px) {
   .conainer-sb {
@@ -119,6 +161,10 @@ export default {
   .infos-sb h1 {
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 5px;
+  }
+  .btn {
+    padding-top: 20px;
   }
 }
 
