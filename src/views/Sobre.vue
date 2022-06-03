@@ -18,7 +18,7 @@
 
         E aí, bora agendar sua perfuração ou troca de jóia!? Aguardo seu contato! -->
         <div class="btn">
-          <a class="contato" href="https://wa.me/5543991278151">Contato</a>
+          <a target="_blank" class="contato" href="https://wa.me/5543991278151">Contato</a>
         </div>
       </div>
     </div>

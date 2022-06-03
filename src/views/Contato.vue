@@ -7,13 +7,13 @@
       </div>
       <div data-anime="top" class="logo-sociais">
         <span>
-          <a href="https://wa.me/5543991278151"><img src="@/assets/sociais/whatsapp.png" alt=""></a>
+          <a target="_blank" href="https://wa.me/5543991278151"><img src="@/assets/sociais/whatsapp.png" alt=""></a>
         </span>
         <span>
-          <a href="https://www.instagram.com/stabelpiercer/"><img src="@/assets/sociais/instagram.png" alt=""></a>
+          <a target="_blank" href="https://www.instagram.com/stabelpiercer/"><img src="@/assets/sociais/instagram.png" alt=""></a>
         </span>
         <span>
-          <a href="https://www.facebook.com/stabelpiercer"><img src="@/assets/sociais/facebook.png" alt=""></a>
+          <a target="_blank" href="https://www.facebook.com/stabelpiercer"><img src="@/assets/sociais/facebook.png" alt=""></a>
         </span>
 
       </div>
