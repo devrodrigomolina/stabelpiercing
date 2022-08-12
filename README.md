@@ -15,4 +15,6 @@
   
   ➡️ https://stabelpiercing.vercel.app/
   
- ##
+ ## APRESENTAÇÃO
+ 
+ <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6938475642220883968" height="820" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
